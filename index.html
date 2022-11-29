@@ -1,0 +1,67 @@
+"Try Catch with Pop and logger.error": {
+"prefix": "trycatch:poperror",
+"body": [
+"try {",
+" ",
+"} catch (error) {",
+" console.error(error)",
+" // @ts-ignore ",
+" Pop.error(('[ERROR]'), error.message)",
+"}",
+]
+},
+"Try Catch with req, res, next": {
+"prefix": "trycatch:req,res,next",
+"body": [
+"(req, res, next) {",
+"try {",
+"",
+" return res.send()",
+"} catch (error) {",
+" next(error)",
+"}",
+"}"
+]
+},
+"Try Catch for C#": {
+"prefix": "trycatch:c#",
+"body": [
+"try ",
+"{",
+" ",
+"}",
+"catch (Exception e)",
+"{",
+" return BadRequest(e.Message);",
+"}",
+]
+},
+"Vue Template": {
+"prefix": "vt",
+"body": [
+"<template>",
+  "",
+  "</template>",
+"",
+"
+<script>",
+  "",
+    "export default {",
+    "",
+    "",
+    "",
+    "setup() {",
+    "",
+    "  return {};",
+    "",
+    "}",
+    "}",
+    "</script>",
+"",
+"<style>
+  ",
+ "",
+  "
+</style>",
+]
+},
